@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.parallax-wrapper{
+    display:flex;
+    background: 
+        radial-gradient(circle at bottom, grey, black, transparent), 
+        radial-gradient(circle at left, black, darkblue, transparent);
+}
+.first-layer {
+    width: 100%;
+    height:80vh;
+    background-image: 
+        -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 1, from(white), color-stop(0.1, rgba(248,255,128,.1)), to(transparent)),
+        -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 1, from(white), color-stop(0.1, rgba(255,186,170,.1)), to(transparent)),
+        -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 2, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
+        -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 2, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+    background-size: 250px 250px, 200px 400px, 300px 270px, 220px 200px;
+    background-position: 0 0, 200px 150px, 130px 270px, 70px 150px;    
+    position:absolute;
+}
+.c-large{
+    width:5px;
+    height:5px;
+    border-radius: 50%;
+    background: orange;
+    margin-left:100px;
+    margin-top:300px;
+    animation: cl-one .5s infinite;
+    
+}
+.cluster{  
+    width:100vw;
+    height:80vh;
+}
+.cluster-one{
+    width:100vw;
+    height:80vh;
+
+}
+
+.cluster-two{
+    width:100vw;
+    height:80vh;
+    /*transform:rotate(900deg);*/
+
+
+/*position:absolute/* overlaps the two left and right div....;*/
+
+
+}
+
+.cluster-three{
+    width:100vw;
+    height:80vh;
+}
+
+@keyframes cl-one{
+    0%{background:lightyellow;}
+    70%%{background:lightpink;}
+    90%{background:lightblue;}
+    100%{background:lightyellow;}
+    0%{box-shadow: 0 10px -50px white;}
+    75%{box-shadow:0 0 50px lightblue;}
+    100%{box-shadow:0 0 1px -50px white;}
+}
+.c-1-medium{
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+    animation: cl-one .1s infinite;
+}
+.c-2-small{
+    background:lightblue;
+    width:3px;
+    height:3px;
+    border-radius:50%;
+    animation:cl-one .3s infinite;
+}
+
+.a{
+    margin-left:25px;
+    margin-top:100px;
+    animation:cl-one 1s infinite;
+}
+.b{
+    margin-left:50px;
+    margin-top:50px;
+}
+.c{
+    margin-left:75px;
+    margin-top:20px;
+}
+.d{
+    margin-left: 90px;
+}
+.e{
+   margin-left:400px;
+    margin-top:100px;
+}
+.i{
+    margin-left:75px;
+}
